@@ -31,3 +31,4 @@ The server I have is just an experiment to learn, in practice and in the future 
 * New Server
 
   
+![Large Server](hugesrvr.jpg)
