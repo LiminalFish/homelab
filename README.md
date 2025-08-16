@@ -12,7 +12,7 @@ I have a Mikrotik hEX serires ethernet router plugged into my modem. There is a 
 
 The SuperMicro server is my chance to experiment with enterprise hardware; it is a bit dated but it is what I could get my hands on. I have not yet had time to configure it but the plan is NixOS installed on a SATA DOM, they system has 12 hotswap SAS drivebays that will host a ZFS filesystem running a software RAID. The system has a RAID controller but it is 1. not great, 2. for ZFS you want to pass the drives through directly. The server will host an Immich server, Jellyfin server, and Copyparty. I will also run a Minecraft server for my friends to play on.
 
-I need currently need to purchase a SATA DOM for the OS and new drives for the system. The drives I currently have are failing. 
+I currently need to purchase a SATA DOM for the OS and new drives for the system. The drives I currently have are failing. 
 
 # The Pi
 
