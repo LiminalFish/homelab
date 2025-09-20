@@ -12,15 +12,13 @@ I have a Mikrotik hEX serires ethernet router plugged into my modem. There is a 
 
 The SuperMicro server is my chance to experiment with enterprise hardware; it is a bit dated but it is what I could get my hands on. I have not yet had time to configure it but the plan is NixOS installed on a SATA DOM, they system has 12 hotswap SAS drivebays that will host a ZFS filesystem running a software RAID. The system has a RAID controller but it is 1. not great, 2. for ZFS you want to pass the drives through directly. The server will host an Immich server, Jellyfin server, and Copyparty. I will also run a Minecraft server for my friends to play on.
 
-I currently need to purchase a SATA DOM for the OS and new drives for the system. The drives I currently have are failing. 
+I currently need to purchase a SATA DOM for the OS and more drives for the system.
 
 # The Pi
 
 The Pi is my entry point into the network when I need access but nothing else is working. The Pi is very consistant with extremely low power draw so it is always on. Lately I have been toying with the server from a distance by SSHing into the Pi and using it to turn on my PC with WoL, then I can connect to my PC with RustDesk and configure the server with IPMI View.
 
 # Issues
-
-This is my first time using enterprise hardware so it is hard to determine what is my mistake and what is truely just an issue. Right now I am having issues with the RAID controller, when I boot into the RAID controller's BIOS it just freezes. I did not have this issue when I was directly connecting to the server in person so this may be an issue somehow related to controlling the server remotely. I have on filled 3 out of the 12 possible drive slots in the server, these drives are very cheap decommissioned drives from Amazon. Some of the drives came in a unconfigured bad state and I have just been fighting the RAID controller to fix it. Online I see that UB is no problem to deal with as long is you can wipe the data. Since these drives have no data on them this should not be a problem. When I try to do anything with the RAID controller it seems to either freeze when performing an operation or just not do it. I will likely just get a HBA passthrough card since I am not using the RAID capabilities of the card anyway.
 
 The server rack I have is about 22" deep, my server is about 30" deep. I need to get a deeper server rack, and probably a smaller server.
 
