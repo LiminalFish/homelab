@@ -1,1 +1,3 @@
 # Homelab
+
+## Current Setup
